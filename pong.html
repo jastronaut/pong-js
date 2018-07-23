@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Pong</title>
+
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <canvas id="board" style="background: #eee" width="800" height="600"></canvas><br>
+            <p class="text-muted">Ball controls</p>
+            <button class="btn btn-primary" id="bigger">Bigger</button>
+            <button class="btn btn-primary" id="smaller">Smaller</button>
+            <button class="btn btn-secondary" id="faster">Faster</button>
+            <button class="btn btn-secondary" id="slower">Slower</button>
+        </div>
+        <div class="col">
+            <h1 class="display-4">pong</h1>
+            <button class="btn btn-success" id="gamectrl">Start</button>
+            <p id="timeelapsed"></p>
+            <div class="debug" style="display: none">
+                <p id="paddlecoords"></p>
+                <p id="whichpressed"></p>
+                <p id="ballcoords"></p>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</div>
+</body>
+
+</html>
